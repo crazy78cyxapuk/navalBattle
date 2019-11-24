@@ -164,5 +164,7 @@ public class arrangement : MonoBehaviour
         finishArrang = true;
     }
 
-    
-}
+    public void goArrangement2()
+    {
+    }
+ }
