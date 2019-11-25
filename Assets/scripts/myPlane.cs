@@ -7,6 +7,7 @@ public class myPlane : MonoBehaviour
 
     public GameObject myCage;
     public static GameObject[,] plane = new GameObject[20, 20];
+    //public static Button[,] plane = new Button[20, 20];
     //private GameObject currentCage;
     //private int id;
     private float posX, posY;
@@ -31,14 +32,6 @@ public class myPlane : MonoBehaviour
             startPosY -= posY;
             startPosX = -8;
         }
-
-        for (int i = 0; i < 20; i++)
-        {
-            for (int j = 0; j < 20; j++)
-            {
-                //plane[i, j].GetComponent<Renderer>().material.color = Color.red;
-            }
-        }
     }
 
 
@@ -50,7 +43,6 @@ public class myPlane : MonoBehaviour
             {
                 if (arrangement.arr1[i, j] == -1)
                 {
-                    //plane[i, j].GetComponent<Renderer>().material.color = Color.red;
                     plane[i, j].GetComponent<SpriteRenderer>().sprite = ship;
                 }
             }
@@ -62,6 +54,7 @@ public class myPlane : MonoBehaviour
         if (arrangement.finishArrang)
         {
             fillCage();
+            arrangement.finishArrang = false;
         }
     }
 
