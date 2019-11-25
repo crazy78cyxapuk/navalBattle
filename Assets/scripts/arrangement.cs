@@ -20,7 +20,7 @@ public class arrangement : MonoBehaviour
             }
         }
 
-        goArrangement4();
+        goArrangement7();
 
         //fillCage();
 
@@ -535,6 +535,383 @@ public class arrangement : MonoBehaviour
         arr1[19, 0] = -1;
 
         arr1[19, 5] = -1;
+
+        finishArrang = true;
+    }
+
+    public void goArrangement5()
+    {
+        for (int i = 10; i <= 11; i++)
+        {
+            arr1[i, 0] = -1; //1
+        }
+
+        for (int i = 13; i <= 14; i++)
+        {
+            arr1[i, 0] = -1; //2
+        }
+
+        for (int i = 16; i <= 19; i++)
+        {
+            arr1[i, 0] = -1; //3
+        }
+
+        for (int i = 2; i <= 3; i++)
+        {
+            arr1[13, i] = -1; //4
+        }
+
+        for (int i = 5; i <= 6; i++)
+        {
+            arr1[13, i] = -1; //5
+        }
+
+        for (int i = 8; i <= 9; i++)
+        {
+            arr1[13, i] = -1; //6
+        }
+
+        for (int i = 11; i <= 12; i++)
+        {
+            arr1[13, i] = -1; //7
+        }
+
+        for (int i = 14; i <= 15; i++)
+        {
+            arr1[13, i] = -1; //8
+        }
+
+        for (int i = 17; i <= 18; i++)
+        {
+            arr1[13, i] = -1; //9
+        }
+
+        for (int i = 2; i <= 4; i++)
+        {
+            arr1[15, i] = -1; //10
+        }
+
+        for (int i = 6; i <= 8; i++)
+        {
+            arr1[15, i] = -1; //11
+        }
+
+        for (int i = 10; i <= 12; i++)
+        {
+            arr1[15, i] = -1; //12
+        }
+
+        for (int i = 14; i <= 16; i++)
+        {
+            arr1[15, i] = -1; //13
+        }
+
+        for (int i = 18; i <= 19; i++)
+        {
+            arr1[15, i] = -1; //14
+        }
+
+        for (int i = 2; i <= 5; i++)
+        {
+            arr1[17, i] = -1; //15
+        }
+
+        for (int i = 7; i <= 10; i++)
+        {
+            arr1[17, i] = -1; //16
+        }
+
+        for (int i = 12; i <= 14; i++)
+        {
+            arr1[17, i] = -1; //17
+        }
+
+        for (int i = 16; i <= 18; i++)
+        {
+            arr1[17, i] = -1; //18
+        }
+
+        for (int i = 2; i <= 6; i++)
+        {
+            arr1[19, i] = -1; //19
+        }
+
+        for (int i = 8; i <= 12; i++)
+        {
+            arr1[19, i] = -1; //20
+        }
+
+        for (int i = 14; i <= 19; i++)
+        {
+            arr1[19, i] = -1; //21
+        }
+
+        arr1[0, 0] = -1;
+        arr1[0, 2] = -1;
+        arr1[0, 4] = -1;
+        arr1[0, 6] = -1;
+        arr1[0, 8] = -1;
+        arr1[0, 10] = -1;
+        arr1[0, 12] = -1;
+        arr1[0, 14] = -1;
+        arr1[0, 16] = -1;
+        arr1[0, 18] = -1;
+
+        arr1[11, 2] = -1;
+
+        arr1[6, 9] = -1;
+
+        finishArrang = true;
+    }
+
+    public void goArrangement6()
+    {
+        for (int i = 0; i <= 3; i++)
+        {
+            arr1[i, 0] = -1; //1
+        }
+
+        for (int i = 5; i <= 6; i++)
+        {
+            arr1[i, 0] = -1; //2
+        }
+
+        for (int i = 8; i <= 9; i++)
+        {
+            arr1[i, 0] = -1; //3
+        }
+
+        for (int i = 11; i <= 12; i++)
+        {
+            arr1[i, 0] = -1; //4
+        }
+
+        for (int i = 14; i <= 15; i++)
+        {
+            arr1[i, 0] = -1; //5
+        }
+
+        for (int i = 17; i <= 18; i++)
+        {
+            arr1[i, 0] = -1; //6
+        }
+
+        for (int i = 2; i <= 6; i++)
+        {
+            arr1[0, i] = -1; //7
+        }
+
+        for (int i = 8; i <= 12; i++)
+        {
+            arr1[0, i] = -1; //8
+        }
+
+        for (int i = 14; i <= 19; i++)
+        {
+            arr1[0, i] = -1; //9
+        }
+
+        for (int i = 2; i <= 5; i++)
+        {
+            arr1[2, i] = -1; //10
+        }
+
+        for (int i = 7; i <= 10; i++)
+        {
+            arr1[2, i] = -1; //11
+        }
+
+        for (int i = 12; i <= 14; i++)
+        {
+            arr1[2, i] = -1; //12
+        }
+
+        for (int i = 16; i <= 18; i++)
+        {
+            arr1[2, i] = -1; //13
+        }
+
+        for (int i = 2; i <= 4; i++)
+        {
+            arr1[4, i] = -1; //14
+        }
+
+        for (int i = 6; i <= 8; i++)
+        {
+            arr1[4, i] = -1; //15
+        }
+
+        for (int i = 10; i <= 12; i++)
+        {
+            arr1[4, i] = -1; //16
+        }
+
+        for (int i = 14; i <= 16; i++)
+        {
+            arr1[4, i] = -1; //17
+        }
+
+        for (int i = 18; i <= 19; i++)
+        {
+            arr1[4, i] = -1; //18
+        }
+
+        for (int i = 6; i <= 7; i++)
+        {
+            arr1[i, 19] = -1; //19
+        }
+
+        for (int i = 9; i <= 10; i++)
+        {
+            arr1[i, 19] = -1; //20
+        }
+
+        for (int i = 12; i <= 13; i++)
+        {
+            arr1[i, 19] = -1; //21
+        }
+
+        arr1[15, 19] = -1;
+        arr1[17, 19] = -1;
+        arr1[19, 19] = -1;
+        arr1[19, 3] = -1;
+        arr1[19, 5] = -1;
+        arr1[19, 7] = -1;
+        arr1[19, 9] = -1;
+        arr1[19, 11] = -1;
+        arr1[19, 13] = -1;
+        arr1[19, 15] = -1;
+        arr1[19, 17] = -1;
+
+        arr1[6, 17] = -1;
+
+
+        finishArrang = true;
+    }
+
+    public void goArrangement7()
+    {
+        for (int i = 0; i <= 2; i++)
+        {
+            arr1[i, 0] = -1; //1
+        }
+
+        for (int i = 4; i <= 6; i++)
+        {
+            arr1[i, 0] = -1; //2
+        }
+
+        for (int i = 8; i <= 10; i++)
+        {
+            arr1[i, 0] = -1; //3
+        }
+
+        for (int i = 12; i <= 14; i++)
+        {
+            arr1[i, 0] = -1; //4
+        }
+
+        for (int i = 16; i <= 17; i++)
+        {
+            arr1[i, 0] = -1; //5
+        }
+
+        for (int i = 2; i <= 4; i++)
+        {
+            arr1[0, i] = -1; //6
+        }
+
+        for (int i = 6; i <= 9; i++)
+        {
+            arr1[0, i] = -1; //7
+        }
+
+        for (int i = 11; i <= 14; i++)
+        {
+            arr1[0, i] = -1; //8
+        }
+
+        for (int i = 16; i <= 19; i++)
+        {
+            arr1[0, i] = -1; //9
+        }
+
+        for (int i = 0; i <= 2; i++)
+        {
+            arr1[19, i] = -1; //10
+        }
+
+        for (int i = 4; i <= 5; i++)
+        {
+            arr1[19, i] = -1; //11
+        }
+
+        for (int i = 7; i <= 8; i++)
+        {
+            arr1[19, i] = -1; //12
+        }
+
+        for (int i = 10; i <= 11; i++)
+        {
+            arr1[19, i] = -1; //13
+        }
+
+        for (int i = 13; i <= 14; i++)
+        {
+            arr1[19, i] = -1; //14
+        }
+
+        for (int i = 16; i <= 17; i++)
+        {
+            arr1[19, i] = -1; //15
+        }
+
+        for (int i = 10; i <= 11; i++)
+        {
+            arr1[i, 17] = -1; //16
+        }
+
+        for (int i = 13; i <= 14; i++)
+        {
+            arr1[i, 17] = -1; //17
+        }
+
+        for (int i = 16; i <= 17; i++)
+        {
+            arr1[i, 17] = -1; //18
+        }
+
+        for (int i = 2; i <= 6; i++)
+        {
+            arr1[i, 19] = -1; //19
+        }
+
+        for (int i = 8; i <= 12; i++)
+        {
+            arr1[i, 19] = -1; //20
+        }
+
+        for (int i = 14; i <= 19; i++)
+        {
+            arr1[i, 19] = -1; //21
+        }
+
+        arr1[2, 4] = -1;
+        arr1[2, 2] = -1;
+
+        arr1[4, 2] = -1;
+        arr1[6, 2] = -1;
+
+        arr1[2, 13] = -1;
+        arr1[2, 15] = -1;
+        arr1[2, 17] = -1;
+
+        arr1[4, 17] = -1;
+        arr1[6, 17] = -1;
+        arr1[8, 17] = -1;
+
+        arr1[17, 4] = -1;
+        arr1[16, 9] = -1;
 
         finishArrang = true;
     }
