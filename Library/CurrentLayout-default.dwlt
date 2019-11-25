@@ -114,7 +114,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 344}
   m_MaxSize: {x: 12008, y: 8044}
   vertical: 0
+<<<<<<< HEAD
   controlID: 120
+=======
+  controlID: 75
+>>>>>>> remotes/origin/Dissolution
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +143,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 344}
   m_MaxSize: {x: 8006, y: 8044}
   vertical: 1
+<<<<<<< HEAD
   controlID: 56
+=======
+  controlID: 76
+>>>>>>> remotes/origin/Dissolution
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -651,9 +659,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 9c350000
     m_LastClickedID: 13724
     m_ExpandedIDs: 000000002232000000ca9a3b
+=======
+    m_SelectedIDs: e0300000
+    m_LastClickedID: 12512
+    m_ExpandedIDs: 000000003c2d000000ca9a3b
+>>>>>>> remotes/origin/Dissolution
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -681,7 +695,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000022320000
+=======
+    m_ExpandedIDs: 000000003c2d0000
+>>>>>>> remotes/origin/Dissolution
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -799,7 +817,11 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
+=======
+  m_LastInspectedObjectInstanceID: 10858
+>>>>>>> remotes/origin/Dissolution
   m_LastVerticalScrollValue: 0
 --- !u!114 &20
 MonoBehaviour:
