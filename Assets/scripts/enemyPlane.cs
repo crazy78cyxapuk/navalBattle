@@ -46,9 +46,9 @@ public class enemyPlane : MonoBehaviour
         fillEnemyShip();
     }
 
-    private void fillEnemyShip()
+    public static void fillEnemyShip()
     {
-        for(int i = 0; i < 10; i++)
+        for(int i = 0; i < 20; i++)
         {
             for(int j=0; j < 20; j++)
             {
@@ -56,6 +56,16 @@ public class enemyPlane : MonoBehaviour
                 {
                     GameObject obj = GameObject.Find(i.ToString() + " " + j.ToString() + " enemy");
                     obj.GetComponent<Renderer>().material.color = Color.red;
+                }
+                if (enemyArr[i, j] == -1)
+                {
+                    GameObject obj = GameObject.Find(i.ToString() + " " + j.ToString() + " enemy");
+                    obj.GetComponent<Renderer>().material.color = Color.blue;
+                }
+                if (enemyArr[i, j] == 0)
+                {
+                    GameObject obj = GameObject.Find(i.ToString() + " " + j.ToString() + " enemy");
+                    obj.GetComponent<Renderer>().material.color = Color.white;
                 }
             }
         }

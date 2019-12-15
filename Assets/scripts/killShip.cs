@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class killShip : MonoBehaviour
 {
+     
     // Start is called before the first frame update
     void Start()
     {
-        enemyPlane.enemyArr[1, 1] = 1;
+        // for example: enemyPlane.enemyArr[1, 1] = 1;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void pisatZdesDima()
     {
-        
+        //tyt kod pisat'
+        enemyPlane.enemyArr[1, 1] = 0;
+        enemyPlane.fillEnemyShip();
     }
 }

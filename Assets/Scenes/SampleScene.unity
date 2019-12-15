@@ -972,8 +972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55347b3a74f68a740b790427061c0b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen1: {fileID: 178659286}
-  screen2: {fileID: 1168302309}
 --- !u!1 &186104444
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,8 +3816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55347b3a74f68a740b790427061c0b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen1: {fileID: 0}
-  screen2: {fileID: 0}
 --- !u!114 &785062406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,7 +5150,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 926543603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1168302313}
+        m_MethodName: pisatZdesDima
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &926543603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6255,6 +6262,7 @@ GameObject:
   - component: {fileID: 1168302310}
   - component: {fileID: 1168302311}
   - component: {fileID: 1168302312}
+  - component: {fileID: 1168302313}
   m_Layer: 5
   m_Name: screen2
   m_TagString: Untagged
@@ -6311,6 +6319,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCage: {fileID: 1197667835741500133, guid: 46119983c20a3874e83b48f8a29390e7,
     type: 3}
+--- !u!114 &1168302313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168302309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5760b880da5eaa8438b121e5efef928e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1209924537
 GameObject:
   m_ObjectHideFlags: 0
@@ -9669,7 +9689,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2027638258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1168302313}
+        m_MethodName: pisatZdesDima
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2027638258
 MonoBehaviour:
   m_ObjectHideFlags: 0

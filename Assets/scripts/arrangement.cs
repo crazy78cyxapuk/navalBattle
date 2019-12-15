@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class arrangement : MonoBehaviour
 {
     public static int[,] arr1 = new int[20, 20];
     public static bool finishArrang;
-    public GameObject screen1, screen2;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +19,23 @@ public class arrangement : MonoBehaviour
                 arr1[i, j] = 0;
             }
         }
+
+        //goArrangement7();
+
+        //fillCage();
+
+        //for(int i = 0; i < 20; i++)
+        //{
+        //    for(int j=0; j<20; j++)
+        //    {
+        //        
+        //    }
+        //}
     }
 
 
     public void goArrangement1()
     {
-        //clearCage();
-
         //строка х столбец
 
         for (int i = 0; i <= 3; i++)
@@ -156,8 +164,6 @@ public class arrangement : MonoBehaviour
 
     public void goArrangement2()
     {
-        //clearCage();
-
         for (int i = 14; i <= 19; i++)
         {
             arr1[i, 0] = -1; //1 шестипалубный корабль
@@ -1291,74 +1297,191 @@ public class arrangement : MonoBehaviour
 
         finishArrang = true;
     }
-         
+
+    public void goArrangement11() // find 6 
+    {
+        int k = 6;
+        int m = 6;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 6)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 6;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement12() // find 5
+    {
+        int k = 5;
+        int m = 5;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 5)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 5;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement13() // find 4
+    {
+        int k = 4;
+        int m = 4;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 4)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 4;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement14() // find 3
+    {
+        int k = 3;
+        int m = 3;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 3)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 3;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement15() // find 2
+    {
+        int k = 2;
+        int m = 2;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 2)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 2;
+            }
+        }
+        finishArrang = true;
+    }
+
+    private void clearCage()
+    {
+
+    }
+
+
+
     public void btn1()
     {
         goArrangement1();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn2()
     {
         goArrangement2();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn3()
     {
         goArrangement3();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn4()
     {
         goArrangement4();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn5()
     {
         goArrangement5();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn6()
     {
         goArrangement6();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn7()
     {
         goArrangement7();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn8()
     {
         goArrangement8();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn9()
     {
         goArrangement9();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
     }
 
     public void btn10()
     {
-        goArrangement10();
-        screen1.SetActive(false);
-        screen2.SetActive(true);
+        goArrangement15();
     }
 }
