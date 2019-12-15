@@ -6,14 +6,8 @@ using UnityEngine.UI;
 
 public class myShip : MonoBehaviour
 {
-    private void Update()
-    {
-        
-    }
-
     private void OnMouseDown()
     {
         gameObject.GetComponent<Renderer>().material.color = Color.red;
     }
-
 }

@@ -12,7 +12,7 @@ public class myPlane : MonoBehaviour
     //private int id;
     private float posX, posY;
     private float startPosX = -8;
-    private float startPosY = 4.8f;
+    private float startPosY = 4;
     public Sprite ship;
 
     private void Start()
@@ -24,9 +24,9 @@ public class myPlane : MonoBehaviour
         {
             for(int j=0; j < 20; j++)
             {
-                plane[i, j] = Instantiate(myCage, new Vector3(startPosX, startPosY, 0), Quaternion.identity); //as GameObject;
+                plane[i, j] = Instantiate(myCage, new Vector3(startPosX, startPosY, 0), Quaternion.identity);// as GameObject;
                 startPosX += posX;
-                plane[i, j].name = i.ToString() + " " + j.ToString();
+                plane[i, j].name = i.ToString() + " " + j.ToString() + " myShip";
                 plane[i, j].transform.parent = transform;
             }
             startPosY -= posY;
