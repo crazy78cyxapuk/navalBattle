@@ -20,7 +20,7 @@ public class arrangement : MonoBehaviour
             }
         }
 
-        goArrangement10();
+        //goArrangement7();
 
         //fillCage();
 
@@ -1296,5 +1296,192 @@ public class arrangement : MonoBehaviour
 
 
         finishArrang = true;
+    }
+
+    public void goArrangement11() // find 6 
+    {
+        int k = 6;
+        int m = 6;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 6)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 6;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement12() // find 5
+    {
+        int k = 5;
+        int m = 5;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 5)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 5;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement13() // find 4
+    {
+        int k = 4;
+        int m = 4;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 4)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 4;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement14() // find 3
+    {
+        int k = 3;
+        int m = 3;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 3)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 3;
+            }
+        }
+        finishArrang = true;
+    }
+
+    public void goArrangement15() // find 2
+    {
+        int k = 2;
+        int m = 2;
+        for (int i = 0; i < 20; i++)
+        {
+            k = m;
+            for (int j = 0; j < 20; j++)
+            {
+
+                if (k == 2)
+                {
+                    arr1[i, j] = -1;
+                    k = 0;
+                }
+                k += 1;
+            }
+            m -= 1;
+            if (m == 0)
+            {
+                m = 2;
+            }
+        }
+        finishArrang = true;
+    }
+
+    private void clearCage()
+    {
+
+    }
+
+
+
+    public void btn1()
+    {
+        goArrangement1();
+    }
+
+    public void btn2()
+    {
+        goArrangement2();
+    }
+
+    public void btn3()
+    {
+        goArrangement3();
+    }
+
+    public void btn4()
+    {
+        goArrangement4();
+    }
+
+    public void btn5()
+    {
+        goArrangement5();
+    }
+
+    public void btn6()
+    {
+        goArrangement6();
+    }
+
+    public void btn7()
+    {
+        goArrangement7();
+    }
+
+    public void btn8()
+    {
+        goArrangement8();
+    }
+
+    public void btn9()
+    {
+        goArrangement9();
+    }
+
+    public void btn10()
+    {
+        goArrangement15();
     }
 }
