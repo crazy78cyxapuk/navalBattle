@@ -21,17 +21,49 @@ public class enemyPlane : MonoBehaviour
             }
         }
 
-        for (int i=0; i<=5; i++)
+        
+        for (int i=0; i<=5; i++)//test ship 1
         {
             enemyArr[i, 4] = 1;
         }
 
-        for (int j = 0; j <= 5; j++)
+        for (int j = 0; j <= 5; j++) //test ship 2
         {
             enemyArr[14, j] = 1;
         }
 
-        enemyArr[19, 19] = 1;
+        enemyArr[19, 19] = 1; //test ship 3
+
+        //Start spiral
+        int n = 19;
+        int k = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            
+            for (int i1 = k; i1 < n; i1++)
+            {
+                enemyArr[k, i1] = 1;
+            }
+
+            for (int i2 = k; i2 < n; i2++)
+            {
+                enemyArr[i2, n] = 1;
+            }
+
+            for (int i3 = n; i3 >= k; i3--)
+            {
+                enemyArr[n, i3] = 1;
+            }
+
+            for (int i4 = n; i4 >= k+1; i4--)
+            {
+                enemyArr[i4, k] = 1;
+            }
+
+            n -= 1;
+            k += 1;
+        }
+        //End of spiral
 
         posX = .3f;
         posY = .3f;
