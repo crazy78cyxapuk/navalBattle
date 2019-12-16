@@ -26,6 +26,13 @@ public class enemyPlane : MonoBehaviour
             enemyArr[i, 4] = 1;
         }
 
+        for (int j = 0; j <= 5; j++)
+        {
+            enemyArr[14, j] = 1;
+        }
+
+        enemyArr[19, 19] = 1;
+
         posX = .3f;
         posY = .3f;
 
