@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\arrangement.cs" />
+    <Compile Include="Assets\scripts\atack.cs" />
     <Compile Include="Assets\scripts\enemyPlane.cs" />
     <Compile Include="Assets\scripts\killShip.cs" />
     <Compile Include="Assets\scripts\myPlane.cs" />

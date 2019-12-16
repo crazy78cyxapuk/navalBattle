@@ -14,7 +14,11 @@ public class killShip : MonoBehaviour
 
     public void pisatZdesDima()
     {
+<<<<<<< HEAD
         //tyt kod pisat'
+=======
+        //обводит корабли вокруг ячейки застрелленым индексом
+>>>>>>> remotes/origin/master
         for (int i = 0; i < 20; i++)
         {
             for (int j = 0; j < 20; j++)
@@ -64,7 +68,11 @@ public class killShip : MonoBehaviour
                 }
             }
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> remotes/origin/master
         enemyPlane.fillEnemyShip();
     }
 }

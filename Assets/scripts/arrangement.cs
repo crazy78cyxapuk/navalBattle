@@ -6,6 +6,7 @@ public class arrangement : MonoBehaviour
 {
     public static int[,] arr1 = new int[20, 20];
     public static bool finishArrang;
+    public GameObject screen1, screen2;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,11 @@ public class arrangement : MonoBehaviour
         //}
     }
 
+    private void swapScreen()
+    {
+        screen1.SetActive(false);
+        screen2.SetActive(true);
+    }
 
     public void goArrangement1()
     {
@@ -1427,61 +1433,66 @@ public class arrangement : MonoBehaviour
         }
         finishArrang = true;
     }
-
-    private void clearCage()
-    {
-
-    }
-
+    
 
 
     public void btn1()
     {
         goArrangement1();
+        swapScreen();
     }
 
     public void btn2()
     {
         goArrangement2();
+        swapScreen();
     }
 
     public void btn3()
     {
         goArrangement3();
+        swapScreen();
     }
 
     public void btn4()
     {
         goArrangement4();
+        swapScreen();
     }
 
     public void btn5()
     {
         goArrangement5();
+        swapScreen();
     }
 
     public void btn6()
     {
         goArrangement6();
+        swapScreen();
     }
 
     public void btn7()
     {
         goArrangement7();
+        swapScreen();
     }
 
     public void btn8()
     {
         goArrangement8();
+        swapScreen();
     }
 
     public void btn9()
     {
         goArrangement9();
+        swapScreen();
     }
 
     public void btn10()
     {
-        goArrangement15();
+        goArrangement10();
+        swapScreen();
     }
 }
