@@ -8,6 +8,6 @@ public class myShip : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        gameObject.GetComponent<Renderer>().material.color = Color.red;
+        //gameObject.GetComponent<Renderer>().material.color = Color.red;
     }
 }

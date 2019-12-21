@@ -43,7 +43,7 @@ public class enemyPlane : MonoBehaviour
             startPosX = 2;
         }
 
-        
+
         for (int i = 0; i < 20; i++)
         {
             for (int j = 0; j < 20; j++)
@@ -51,21 +51,22 @@ public class enemyPlane : MonoBehaviour
                 enemyArr[i, j] = -1;
             }
         }
+        //////////}
 
-        //!!!!
-        for (int i = 0; i <= 5; i++)//test ship 1
-        {
-            enemyArr[i, 4] = 1;
-        }
+        ////////////!!!!
+        //////////for (int i = 0; i <= 5; i++)//test ship 1
+        //////////{
+        //////////    enemyArr[i, 4] = 1;
+        //////////}
 
-        for (int j = 0; j <= 5; j++) //test ship 2
-        {
-            enemyArr[14, j] = 1;
-        }
+        //////////for (int j = 0; j <= 5; j++) //test ship 2
+        //////////{
+        //////////    enemyArr[14, j] = 1;
+        //////////}
 
-        enemyArr[19, 19] = 1; //test ship 3
+        //////////enemyArr[19, 19] = 1; //test ship 3
 
-        //!!!!
+        ////////////!!!!
 
         fillEnemyShip();
 

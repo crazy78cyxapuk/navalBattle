@@ -5,12 +5,7 @@ using UnityEngine;
 public class killShip : MonoBehaviour
 {
      
-    // Start is called before the first frame update
-    void Start()
-    {
-        // for example: enemyPlane.enemyArr[1, 1] = 1;
-
-    }
+    
 
     public void pisatZdesDima()
     {
