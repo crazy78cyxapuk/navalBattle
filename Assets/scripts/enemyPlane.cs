@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class enemyPlane : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class enemyPlane : MonoBehaviour
     private float posX, posY;
     private float startPosX = 2;
     private float startPosY = 4;
+    public Sprite deadShip1;
+    public Sprite paint1;
+    private static Sprite deadShip, paint;
 
     private void Start()
     {
+        deadShip = deadShip1;
+        paint = paint1;
+
         for (int i = 0; i < 20; i++)
         {
             for (int j = 0; j < 20; j++)
@@ -21,7 +28,7 @@ public class enemyPlane : MonoBehaviour
             }
         }
 
-        for (int i=0; i<=5; i++)
+        for (int i = 0; i <= 5; i++)
         {
             enemyArr[i, 4] = 1;
         }
@@ -33,7 +40,7 @@ public class enemyPlane : MonoBehaviour
         {
             for (int j = 0; j < 20; j++)
             {
-                
+
                 plane[i, j] = Instantiate(enemyCage, new Vector3(startPosX, startPosY, 0), Quaternion.identity); //as GameObject;
                 startPosX += posX;
                 plane[i, j].name = i.ToString() + " " + j.ToString() + " enemy";
@@ -108,24 +115,26 @@ public class enemyPlane : MonoBehaviour
 
     public static void fillEnemyShip()
     {
-        for(int i = 0; i < 20; i++)
+        for (int i = 0; i < 20; i++)
         {
-            for(int j=0; j < 20; j++)
+            for (int j = 0; j < 20; j++)
             {
                 if (enemyArr[i, j] == 1) //ранен\убит
                 {
                     GameObject obj = GameObject.Find(i.ToString() + " " + j.ToString() + " enemy");
-                    obj.GetComponent<Renderer>().material.color = Color.red;
+                    //obj.GetComponent<Renderer>().material.color = Color.red;
+                    obj.GetComponent<SpriteRenderer>().sprite = deadShip;
                 }
                 if (enemyArr[i, j] == -1) //статус до выстрела
                 {
                     GameObject obj = GameObject.Find(i.ToString() + " " + j.ToString() + " enemy");
-                    obj.GetComponent<Renderer>().material.color = Color.blue;
+                    obj.GetComponent<Renderer>().material.color = Color.white;
                 }
                 if (enemyArr[i, j] == 0) //пусто
                 {
                     GameObject obj = GameObject.Find(i.ToString() + " " + j.ToString() + " enemy");
-                    obj.GetComponent<Renderer>().material.color = Color.white;
+                    obj.GetComponent<SpriteRenderer>().sprite = paint;
+                    //obj.GetComponent<Renderer>().material.color = Color.white;
                 }
             }
         }

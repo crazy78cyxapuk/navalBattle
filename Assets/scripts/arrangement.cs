@@ -151,11 +151,11 @@ public class arrangement : MonoBehaviour
 
         arr1[2, 4] = -1;
         arr1[2, 6] = -1;
-        arr1[2, 8] = -1;
+        arr1[9, 9] = -1;
         arr1[2, 10] = -1;
         arr1[2, 12] = -1;
         arr1[2, 14] = -1;
-        arr1[2, 16] = -1;
+        arr1[10, 11] = -1;
 
         arr1[4, 17] = -1;
         arr1[6, 17] = -1;
@@ -280,10 +280,10 @@ public class arrangement : MonoBehaviour
         arr1[4, 8] = -1;
         arr1[6, 8] = -1;
         arr1[8, 8] = -1;
-        arr1[10, 8] = -1;
+        arr1[9, 13] = -1;
         arr1[12, 8] = -1;
         arr1[14, 8] = -1;
-        arr1[16, 8] = -1;
+        arr1[13, 12] = -1;
         arr1[18, 8] = -1;
 
         arr1[2, 10] = -1;
@@ -401,7 +401,7 @@ public class arrangement : MonoBehaviour
             arr1[i, 19] = -1; //21
         }
 
-        arr1[8, 1] = -1;
+        arr1[14, 8] = -1;
         arr1[8, 3] = -1;
         arr1[8, 5] = -1;
         arr1[8, 7] = -1;
@@ -409,7 +409,7 @@ public class arrangement : MonoBehaviour
         arr1[8, 11] = -1;
         arr1[8, 13] = -1;
         arr1[8, 15] = -1;
-        arr1[8, 17] = -1;
+        arr1[11, 11] = -1;
 
         arr1[10, 0] = -1;
 
@@ -526,15 +526,15 @@ public class arrangement : MonoBehaviour
             arr1[i, 13] = -1; //21
         }
 
-        arr1[2, 11] = -1;
+        arr1[5, 5] = -1;
         arr1[4, 11] = -1;
         arr1[6, 11] = -1;
         arr1[8, 11] = -1;
         arr1[10, 11] = -1;
         arr1[12, 11] = -1;
         arr1[14, 11] = -1;
-        arr1[16, 11] = -1;
-        arr1[18, 11] = -1;
+        arr1[8, 8] = -1;
+        arr1[10, 7] = -1;
 
         arr1[0, 0] = -1;
 

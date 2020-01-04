@@ -71,6 +71,7 @@
     <Compile Include="Assets\scripts\myPlane.cs" />
     <Compile Include="Assets\scripts\myPlaneAttack.cs" />
     <Compile Include="Assets\scripts\myShip.cs" />
+    <Compile Include="Assets\scripts\quit.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/cyxapuk/Desktop/nadolin/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
